@@ -18,6 +18,27 @@ Image.delete_all
 #сбрасываем счетчик
 Image.reset_pk_sequence
 Image.create([
-                 {name: 'Wassily-Kandinsky-01.jpg', path: 'pictures/Wassily-Kandinsky-01.jpg'},
-                 {name: 'Wassily-Kandinsky-02.jpg', path: 'pictures/Wassily-Kandinsky-02.jpg'}
+                 {name: 'Композиция VIII', file: 'pictures/kandinsky/1.jpg'},
+                 {name: 'Композиция IV', file: 'pictures/kandinsky/2.jpg'},
+                 {name: 'Желто-красно-синий', file: 'pictures/kandinsky/3.jpg'},
+                 {name: 'Зимний пейзаж', file: 'pictures/kandinsky/4.jpg'},
+                 {name: 'Вид Мурнау', file: 'pictures/kandinsky/5.jpg'},
+                 {name: 'Гималаи. Розовые горы', file: 'pictures/rerich/1.jpg'},
+                 {name: 'Заморские гости', file: 'pictures/rerich/2.jpg'},
+                 {name: 'Град обречённый', file: 'pictures/rerich/3.jpg'},
+                 {name: 'Странник Светлого Града', file: 'pictures/rerich/4.jpg'},
+                 {name: 'Звезда утра', file: 'pictures/rerich/5.jpg'},
+                 {name: 'Звёздная ночь', file: 'pictures/van-gog/1.jpg'},
+                 {name: 'Сеятель', file: 'pictures/van-gog/2.jpg'},
+                 {name: 'Подсолнухи', file: 'pictures/van-gog/3.jpg'},
+                 {name: 'Лодки в Сент-Мари', file: 'pictures/van-gog/4.jpg'},
+                 {name: 'Ночная терраса кафе', file: 'pictures/van-gog/5.jpg'}
+             ])
+
+Theme.delete_all
+Theme.reset_pk_sequence
+Theme.create([
+                 {name: '-'}, #Нет темы
+                 {name: 'Лучшая картина Кандинского'}
+
              ])
