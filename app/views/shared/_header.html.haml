@@ -2,10 +2,16 @@
   %nav.navbar.navbar-inverse
     .container-fluid
       .navbar-header
-        %ul.nav.navbar-nav
-          %li
-            =link_to 'Contacts', main_contacts_path
-          %li
-            =link_to 'Help', main_help_path
-          %li
-            =link_to 'About', main_about_path
+        %p.locale
+        -#.ru_link
+        = link_to image_tag("ru_flag.png", alt: "",  title: "Русский" ), locale: :ru
+        = link_to image_tag("en_flag.png", alt: "",  title: "English"), locale: :en
+        %b
+          = I18n.locale
+      %ul.nav.navbar-nav
+        %li
+          =link_to t('.home'), index_path
+        %li
+          =link_to t('.help'), help_path
+        %li
+          =link_to t('.about'), about_path
