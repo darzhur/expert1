@@ -39,7 +39,7 @@ var selectedThemeId = '<%= @image_data[:theme_id] %>';
 $('.image_display h2.up').append().html(oneImageName);
 
 // show image
-var pathImage = "assets/pictures/" + oneImageFile;
+var pathImage = "/assets/pictures/" + oneImageFile;
 // $('.img-center').html('<img alt="Selected Image" src="'+ pathImage + '"/>');
 $(".img-center").attr({title: "Selected image" });
 $(".img-center img").attr({alt: "Selected Image", src: pathImage, title: "Selected image" });
@@ -62,7 +62,7 @@ $('.img-right-side').click(function(event) {
     oneImageFile = data_return.file;
     oneImageId = data_return.image_id;
     $('.image_display h2.up').append().html(oneImageName);
-    var pathImage = "assets/pictures/" + oneImageFile;
+    var pathImage = "/assets/pictures/" + oneImageFile;
     $(".img-center").attr({title: "Selected image"});
     $(".img-center img").attr({alt: "Selected Image", src: pathImage, title: "Selected image"});
   })

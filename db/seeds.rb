@@ -28,11 +28,11 @@ Image.create([
                  {name: 'Град обречённый', file: 'rerich/3.jpg', theme_id: 3},
                  {name: 'Странник Светлого Града', file: 'rerich/4.jpg', theme_id: 3},
                  {name: 'Звезда утра', file: 'rerich/5.jpg', theme_id: 3},
-                 {name: 'Звёздная ночь', file: 'van-gog/1.jpg', theme_id: 4},
-                 {name: 'Сеятель', file: 'van-gog/2.jpg', theme_id: 4},
-                 {name: 'Подсолнухи', file: 'van-gog/3.jpg', theme_id: 4},
-                 {name: 'Лодки в Сент-Мари', file: 'van-gog/4.jpg', theme_id: 4},
-                 {name: 'Ночная терраса кафе', file: 'van-gog/5.jpg', theme_id: 4}
+                 {name: 'Звёздная ночь', file: 'van_gog/1.jpg', theme_id: 4},
+                 {name: 'Сеятель', file: 'van_gog/2.jpg', theme_id: 4},
+                 {name: 'Подсолнухи', file: 'van_gog/3.jpg', theme_id: 4},
+                 {name: 'Лодки в Сент-Мари', file: 'van_gog/4.jpg', theme_id: 4},
+                 {name: 'Ночная терраса кафе', file: 'van_gog/5.jpg', theme_id: 4}
              ])
 
 Theme.delete_all
