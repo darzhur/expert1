@@ -48,7 +48,7 @@ $('.img-right-side').click(function(event) {
   event.stopImmediatePropagation(); // would stop the event from bubbling to parent elements,
   $.ajax({
     type: "get",
-    url: "api/next_image",
+    url: "/api/next_image",
     data: {
       index: imageCurrentIndex,
       theme_id: selectedThemeId,
