@@ -18,21 +18,21 @@ Image.delete_all
 #сбрасываем счетчик
 Image.reset_pk_sequence
 Image.create([
-                 {name: 'Композиция VIII', file: 'kandinsky/1.jpg', theme_id: 2},
-                 {name: 'Композиция IV', file: 'kandinsky/2.jpg', theme_id: 2},
-                 {name: 'Желто-красно-синий', file: 'kandinsky/3.jpg', theme_id: 2},
-                 {name: 'Зимний пейзаж', file: 'kandinsky/4.jpg', theme_id: 2},
-                 {name: 'Вид Мурнау', file: 'kandinsky/5.jpg', theme_id: 2},
-                 {name: 'Гималаи. Розовые горы', file: 'rerich/1.jpg', theme_id: 3},
-                 {name: 'Заморские гости', file: 'rerich/2.jpg', theme_id: 3},
-                 {name: 'Град обречённый', file: 'rerich/3.jpg', theme_id: 3},
-                 {name: 'Странник Светлого Града', file: 'rerich/4.jpg', theme_id: 3},
-                 {name: 'Звезда утра', file: 'rerich/5.jpg', theme_id: 3},
-                 {name: 'Звёздная ночь', file: 'van_gog/1.jpg', theme_id: 4},
-                 {name: 'Сеятель', file: 'van_gog/2.jpg', theme_id: 4},
-                 {name: 'Подсолнухи', file: 'van_gog/3.jpg', theme_id: 4},
-                 {name: 'Лодки в Сент-Мари', file: 'van_gog/4.jpg', theme_id: 4},
-                 {name: 'Ночная терраса кафе', file: 'van_gog/5.jpg', theme_id: 4}
+                 {name: 'Композиция VIII', file: '/kandinsky/1.jpg', theme_id: 2},
+                 {name: 'Композиция IV', file: '/kandinsky/2.jpg', theme_id: 2},
+                 {name: 'Желто-красно-синий', file: '/kandinsky/3.jpg', theme_id: 2},
+                 {name: 'Зимний пейзаж', file: '/kandinsky/4.jpg', theme_id: 2},
+                 {name: 'Вид Мурнау', file: '/kandinsky/5.jpg', theme_id: 2},
+                 {name: 'Гималаи. Розовые горы', file: '/rerich/1.jpg', theme_id: 3},
+                 {name: 'Заморские гости', file: '/rerich/2.jpg', theme_id: 3},
+                 {name: 'Град обречённый', file: '/rerich/3.jpg', theme_id: 3},
+                 {name: 'Странник Светлого Града', file: '/rerich/4.jpg', theme_id: 3},
+                 {name: 'Звезда утра', file: '/rerich/5.jpg', theme_id: 3},
+                 {name: 'Звёздная ночь', file: '/van_gog/1.jpg', theme_id: 4},
+                 {name: 'Сеятель', file: '/van_gog/2.jpg', theme_id: 4},
+                 {name: 'Подсолнухи', file: '/van_gog/3.jpg', theme_id: 4},
+                 {name: 'Лодки в Сент-Мари', file: '/van_gog/4.jpg', theme_id: 4},
+                 {name: 'Ночная терраса кафе', file: '/van_gog/5.jpg', theme_id: 4}
              ])
 
 Theme.delete_all
