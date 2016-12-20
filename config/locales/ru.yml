@@ -18,17 +18,15 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
-en:
+ru:
   shared:
    header:
-     logo_title: "Experteese in Ruby_on_Rails"
-     home: "Home"
-     help: "Help"
-     about: "About"
-     sign_in: "Sign in"
-     sign_out: "Sign out"
-     person: "Me"
-     profile: "My page"
-     settings: "Settings"
-
+     logo_title: "Experteese на Rails"
+     home: "Главная"
+     help: "Помощь"
+     about: "О проекте"
+     sign_in: "Войти"
+     sign_out: "Выйти"
+     person: "Я"
+     profile: "Моя страница"
+     settings: "Настройки"

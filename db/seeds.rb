@@ -18,27 +18,28 @@ Image.delete_all
 #сбрасываем счетчик
 Image.reset_pk_sequence
 Image.create([
-                 {name: 'Композиция VIII', file: 'pictures/kandinsky/1.jpg'},
-                 {name: 'Композиция IV', file: 'pictures/kandinsky/2.jpg'},
-                 {name: 'Желто-красно-синий', file: 'pictures/kandinsky/3.jpg'},
-                 {name: 'Зимний пейзаж', file: 'pictures/kandinsky/4.jpg'},
-                 {name: 'Вид Мурнау', file: 'pictures/kandinsky/5.jpg'},
-                 {name: 'Гималаи. Розовые горы', file: 'pictures/rerich/1.jpg'},
-                 {name: 'Заморские гости', file: 'pictures/rerich/2.jpg'},
-                 {name: 'Град обречённый', file: 'pictures/rerich/3.jpg'},
-                 {name: 'Странник Светлого Града', file: 'pictures/rerich/4.jpg'},
-                 {name: 'Звезда утра', file: 'pictures/rerich/5.jpg'},
-                 {name: 'Звёздная ночь', file: 'pictures/van-gog/1.jpg'},
-                 {name: 'Сеятель', file: 'pictures/van-gog/2.jpg'},
-                 {name: 'Подсолнухи', file: 'pictures/van-gog/3.jpg'},
-                 {name: 'Лодки в Сент-Мари', file: 'pictures/van-gog/4.jpg'},
-                 {name: 'Ночная терраса кафе', file: 'pictures/van-gog/5.jpg'}
+                 {name: 'Композиция VIII', file: 'kandinsky/1.jpg', theme_id: 2},
+                 {name: 'Композиция IV', file: 'kandinsky/2.jpg', theme_id: 2},
+                 {name: 'Желто-красно-синий', file: 'kandinsky/3.jpg', theme_id: 2},
+                 {name: 'Зимний пейзаж', file: 'kandinsky/4.jpg', theme_id: 2},
+                 {name: 'Вид Мурнау', file: 'kandinsky/5.jpg', theme_id: 2},
+                 {name: 'Гималаи. Розовые горы', file: 'rerich/1.jpg', theme_id: 3},
+                 {name: 'Заморские гости', file: 'rerich/2.jpg', theme_id: 3},
+                 {name: 'Град обречённый', file: 'rerich/3.jpg', theme_id: 3},
+                 {name: 'Странник Светлого Града', file: 'rerich/4.jpg', theme_id: 3},
+                 {name: 'Звезда утра', file: 'rerich/5.jpg', theme_id: 3},
+                 {name: 'Звёздная ночь', file: 'van-gog/1.jpg', theme_id: 4},
+                 {name: 'Сеятель', file: 'van-gog/2.jpg', theme_id: 4},
+                 {name: 'Подсолнухи', file: 'van-gog/3.jpg', theme_id: 4},
+                 {name: 'Лодки в Сент-Мари', file: 'van-gog/4.jpg', theme_id: 4},
+                 {name: 'Ночная терраса кафе', file: 'van-gog/5.jpg', theme_id: 4}
              ])
 
 Theme.delete_all
 Theme.reset_pk_sequence
 Theme.create([
-                 {name: '-'}, #Нет темы
-                 {name: 'Лучшая картина Кандинского'}
-
+                 {name: '-'},  # 1
+                 {name: 'Лучшая картина Кандинского'}, # 2
+                 {name: 'Лучшая картина Рериха'}, # 3
+                 {name: 'Лучшая картина Ван Гога'} # 4
              ])

@@ -8,15 +8,25 @@ Rails.application.routes.draw do
   resources :microposts
   resources :images
   resources :users
+
   root 'work#index'
 
   get 'main/index'
 
-  match 'main/help', to:'main#help', :via=>'get'
+  namespace :api, defaults: { format: :json } do
+    # We are going to list our resources here
+    #   resources :users
 
-  get 'main/contacts'
+    match 'next_image',       to: 'api#next_image',   via: 'get'
+    match 'prev_image',       to: 'api#prev_image',   via: 'get'
+    match 'save_value',       to: 'api#save_value',   via: :get
 
-  get 'main/about'
+  end
+
+  match 'index',    to: 'main#index',           via: 'get'
+  match 'about',    to: 'main#about',           via: 'get'
+  match 'help',     to: 'main#help',            via: 'get'
+  match 'contacts', to: 'main#contacts',        via: 'get'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -67,3 +67,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'haml-rails', '~> 0.9'
+
+group :production do
+  # For Heroku deployment
+  gem 'rails_12factor'
+end
