@@ -15,3 +15,27 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(startApplication);
+
+function startApplication(){
+	$('.img-left-side').css({"display": "none"});
+    $('.img-right-side').css({"display": "none"});
+    $('.image_diag').css({"display": "none"});  
+}
+
+function updateSlider(slideAmount) {
+  //get the element
+  var displayValue = document.getElementById("chosen_value");
+  //show the amount
+  console.log("IN updateSlider:  - slideAmount = " + slideAmount );
+  displayValue.innerHTML = slideAmount;
+
+  //get the element
+  var pic = document.getElementById("pic");
+  //set the dimensions
+  //   pic.style.width = slideAmount + "%";
+  //   pic.style.height = slideAmount + "%";
+  // return slideAmount;
+
+}

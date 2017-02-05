@@ -3,9 +3,11 @@ class ApplicationController < ActionController::Base
 
   before_action :set_locale
 
+  include SessionsHelper # to see in views and controllers
+
   def extr_locale_in_accept_lang
     locale = params[:locale]#.scan(/^[a-z]{2}/).first
-    logger.info "In extr_locale_in_accept_lang: locale = #{locale}"
+    # logger.info "In extr_locale_in_accept_lang: locale = #{locale}"
   end
 
   private

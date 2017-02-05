@@ -1,2 +1,5 @@
-%h1 Main#about
-%p Find me in app/views/main/about.html.haml
+.text-center
+	%h1 
+		= t(".welcome")
+	%p
+		= link_to t('.work'), work_path, class: "btn btn-lg btn-primary"

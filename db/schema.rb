@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161206161847) do
+ActiveRecord::Schema.define(version: 20170124120321) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 20161206161847) do
   create_table "images", force: :cascade do |t|
     t.string   "name"
     t.string   "file"
-    t.float    "av_value"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.float    "ave_value",  default: 0.0
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.integer  "theme_id"
   end
 
@@ -41,8 +41,12 @@ ActiveRecord::Schema.define(version: 20161206161847) do
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "password_digest"
+    t.string   "remember_token"
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["remember_token"], name: "index_users_on_remember_token", using: :btree
   end
 
   create_table "values", force: :cascade do |t|
